@@ -20,14 +20,9 @@ app.set("view engine", "ejs");
 // load assest
 app.use(express.static("assets"));
 
-app.get('/', function(req, res){
-    res.render("index")
-});
-
-app.get('/add-user', function(req, res){
-    res.render("add_user")
-});
-
+// load routers
+const useContorller = require("./server/routes/router");
+app.use("/", useContorller)
 
 app.listen(PORT, function(){
     console.log(`Server is running on http://localhost:${PORT}`)

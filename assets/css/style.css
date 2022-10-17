@@ -36,6 +36,9 @@ a{
 .justify-between {
     justify-content: between;
 }
+.text-center {
+    text-align: center;
+}
 
 .border-shadow {
     border: 1px solid var(--border-btn);
@@ -135,6 +138,7 @@ table{
 /* Add user & Update user template */
 .form-title{
     margin-top: 2em;
+    justify-content: center;
 }
 
 .form-title >h2 {
